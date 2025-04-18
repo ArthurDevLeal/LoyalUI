@@ -13,6 +13,8 @@ const buttonVariants = cva(
           "bg-loyal-tertiary text-loyal-background/90 active:bg-loyal-tertiary hover:bg-loyal-tertiary/85 hover:text-loyal-background",
         ghost:
           "text-loyal-label/90 shadow-none active:bg-loyal-fill hover:bg-loyal-secondaryFill hover:text-loyal-label ",
+        secondary:
+          "text-loyal-label/90 shadow-none active:bg-loyal-fill bg-loyal-quaternaryFill hover:bg-loyal-secondaryFill hover:text-loyal-label ",
         outline:
           "text-loyal-label/90 border active:bg-loyal-fill hover:bg-loyal-secondaryFill hover:text-loyal-label ",
         link: "text-loyal-label/90 underline-offset-4 hover:text-loyal-label hover:underline shadow-none",
