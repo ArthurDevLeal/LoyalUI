@@ -294,13 +294,6 @@
   
 }
 
-@media (min-width: 768px) {
-  :root {
-    --loyal-spacing-md: 20px;
-    --loyal-spacing-lg: 28px;
-    --loyal-spacing-xl: 36px;
-  }
-}
 
 @layer utilities {
   .focus-ring {
