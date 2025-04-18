@@ -2,6 +2,10 @@
 
 A modern and elegant React component library focused on simplicity, usability, and full customization. Built for developers who care about design and developer experience equally.
 
+![LoyalUI Banner](https://sdmntprsouthcentralus.oaiusercontent.com/files/00000000-7768-61f7-bb2d-f0f98f81826b/raw?se=2025-04-18T02%3A52%3A15Z&sp=r&sv=2024-08-04&sr=b&scid=8627c799-5895-5756-9e32-3a3747bdcaea&skoid=f0c3f613-0f9b-4a8a-a29a-c1a910343ad7&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-04-17T20%3A29%3A33Z&ske=2025-04-18T20%3A29%3A33Z&sks=b&skv=2024-08-04&sig=0evzoHxiEPbGeMuxIbpQmV34wXwMPEKgCUnch4dZPdU%3D)
+
+
+
 ##  Features
 
 - **Fully customizable**: Built on Tailwind CSS for easy theming and customization
