@@ -2,9 +2,7 @@
 
 A modern and elegant React component library focused on simplicity, usability, and full customization. Built for developers who care about design and developer experience equally.
 
-![Loyal UI Banner](/api/placeholder/1200/600)
-
-## 🎨 Features
+##  Features
 
 - **Fully customizable**: Built on Tailwind CSS for easy theming and customization
 - **Dark mode support**: Seamless light and dark mode switching
@@ -13,7 +11,7 @@ A modern and elegant React component library focused on simplicity, usability, a
 - **Accessible**: Built with accessibility in mind following WCAG guidelines
 - **Open source**: Free for personal and commercial use
 
-## 📦 Components
+##  Components
 
 Loyal UI provides a comprehensive set of components:
 
@@ -26,7 +24,7 @@ Loyal UI provides a comprehensive set of components:
 - **Data Display**: Table, Badge, Avatar, List
 - **Advanced**: Calendar, Dropdown, Accordion, Combobox
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -80,7 +78,7 @@ npx @loyal-ui/cli init
 npx @loyal-ui/cli add button
 ```
 
-## 💡 Usage
+##  Usage
 
 ### Simple Button Example
 
@@ -130,7 +128,7 @@ export default function ModalExample() {
 }
 ```
 
-## 🎯 Philosophy
+##  Philosophy
 
 Loyal UI is designed with these core principles:
 
@@ -139,7 +137,7 @@ Loyal UI is designed with these core principles:
 4. **Accessibility**: All components meet WCAG AA standards
 5. **Customization**: Easily adapt components to your brand 
 
-## 🛠️ Customization
+##  Customization
 
 ### Theming
 
@@ -169,7 +167,7 @@ module.exports = {
 
 Each component accepts custom props for styling and behavior modifications.
 
-## 📝 Development
+##  Development
 
 ### Project Structure
 
@@ -192,6 +190,6 @@ Each component accepts custom props for styling and behavior modifications.
 
 We welcome contributions! Please see our contributing guidelines for more details.
 
-## 📜 License
+##  License
 
 MIT License - see the [LICENSE](LICENSE) file for details.
