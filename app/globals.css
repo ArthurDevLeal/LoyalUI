@@ -1,1 +1,160 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+
+  --loyal-primary: oklch(0.5404 0.161 253.82);
+  --loyal-secondary: oklch(0.748 0.199 46.39);
+  --loyal-tertiary: oklch(0.568 0.277 12.16);
+  --loyal-quaternary: oklch(0.7861 0.181 142.72);
+
+  --loyal-red: oklch(0.5691 0.266 15.34);
+  --loyal-orange: oklch(0.748 0.199 46.39);
+  --loyal-yellow: oklch(0.9294 0.157 84.8);
+  --loyal-green: oklch(0.726 0.173 142.51);
+  --loyal-mint: oklch(0.7947 0.149 183.1);
+  --loyal-teal: oklch(0.698 0.139 202.36);
+  --loyal-cyan: oklch(0.6684 0.129 230.14);
+  --loyal-blue: oklch(0.5404 0.161 253.82);
+  --loyal-indigo: oklch(0.5164 0.218 284.67);
+  --loyal-purple: oklch(0.5658 0.21 315.49);
+  --loyal-pink: oklch(0.568 0.277 12.16);
+  --loyal-brown: oklch(0.598 0.079 64.8);
+  
+   --loyal-gray-1: oklch(0.628 0.006 258.34);
+   --loyal-gray-2: oklch(0.7302 0.005 258.34);
+   --loyal-gray-3: oklch(0.8253 0.005 258.34);
+   --loyal-gray-4: oklch(0.855 0.005 258.34);
+   --loyal-gray-5: oklch(0.9176 0.005 258.34);
+   --loyal-gray-6: oklch(0.9645 0.005 258.34);
+
+  --loyal-background: oklch(1 0 0);
+  --loyal-secondaryBackground: oklch(0.9645 0.005 258.34);
+  --loyal-tertiaryBackground: oklch(1 0 0);
+  --loyal-groupedBackground: oklch(0.9645 0.005 258.34);
+  --loyal-secondaryGroupedBackground: oklch(1 0 0);
+  --loyal-tertiaryGroupedBackground: oklch(0.9645 0.005 258.34);
+
+    
+  --loyal-label: oklch(0 0 0);
+  --loyal-secondaryLabel: oklch(0.363 0.006 258.34 / 0.6);
+  --loyal-tertiaryLabel: oklch(0.363 0.006 258.34 / 0.3);
+  --loyal-quaternaryLabel: oklch(0.363 0.006 258.34 / 0.18);
+  
+  --loyal-fill: oklch(0.545 0.007 258.34 / 0.2);
+  --loyal-secondaryFill: oklch(0.545 0.007 258.34 / 0.16);
+  --loyal-tertiaryFill: oklch(0.545 0.007 258.34 / 0.12);
+  --loyal-quaternaryFill: oklch(0.545 0.007 258.34 / 0.08);
+  
+  --loyal-separator: oklch(0.363 0.006 258.34 / 0.29);
+  --loyal-opaqueSeparator: oklch(0.803 0.004 258.34);
+  --loyal-thinSeparator: oklch(0.363 0.006 258.34 / 0.18);
+  
+  --loyal-card: oklch(1 0 0);
+  --loyal-popover: oklch(1 0 0);
+  --loyal-sheet: oklch(1 0 0);
+  --loyal-toast: oklch(1 0 0 / 0.86);
+}
+.dark {
+  --loyal-primary: oklch(0.593 0.156 253.82);
+  --loyal-secondary: oklch(0.786 0.189 46.39);
+  --loyal-tertiary: oklch(0.598 0.247 12.16);
+  --loyal-quaternary: oklch(0.8193 0.176 142.72);
+  
+  --loyal-red: oklch(0.599 0.236 15.34);
+  --loyal-orange: oklch(0.786 0.189 46.39);
+  --loyal-yellow: oklch(0.958 0.147 84.8);
+  --loyal-green: oklch(0.764 0.163 142.51);
+  --loyal-mint: oklch(0.829 0.136 183.1);
+  --loyal-teal: oklch(0.723 0.129 202.36);
+  --loyal-cyan: oklch(0.716 0.119 230.14);
+  --loyal-blue: oklch(0.593 0.156 253.82);
+  --loyal-indigo: oklch(0.558 0.208 284.67);
+  --loyal-purple: oklch(0.597 0.2 315.49);
+  --loyal-pink: oklch(0.598 0.247 12.16);
+  --loyal-brown: oklch(0.635 0.069 64.8);
+  
+
+  --loyal-background: oklch(0 0 0);
+  --loyal-secondaryBackground: oklch(0.168 0.003 258.34);
+  --loyal-tertiaryBackground: oklch(0.243 0.003 258.34);
+  --loyal-groupedBackground: oklch(0.168 0.003 258.34);
+  --loyal-secondaryGroupedBackground: oklch(0.243 0.003 258.34);
+  --loyal-tertiaryGroupedBackground: oklch(0.3 0.003 258.34);
+  
+
+  --loyal-label: oklch(1 0 0);
+  --loyal-secondaryLabel: oklch(0.945 0.005 258.34 / 0.6);
+  --loyal-tertiaryLabel: oklch(0.945 0.005 258.34 / 0.3);
+  --loyal-quaternaryLabel: oklch(0.945 0.005 258.34 / 0.18);
+  
+
+  --loyal-card: oklch(0.168 0.003 258.34);
+  --loyal-popover: oklch(0.243 0.003 258.34);
+  --loyal-sheet: oklch(0.168 0.003 258.34 / 0.85);
+  --loyal-toast: oklch(0.273 0.003 258.34 / 0.86);
+}
+
+@theme inline {
+  --color-loyal-primary: var(--loyal-primary);
+  --color-loyal-secondary: var(--loyal-secondary);
+  --color-loyal-tertiary: var(--loyal-tertiary);
+  --color-loyal-quaternary: var(--loyal-quaternary);
+  
+  --color-loyal-red: var(--loyal-red);
+  --color-loyal-orange: var(--loyal-orange);
+  --color-loyal-yellow: var(--loyal-yellow);
+  --color-loyal-green: var(--loyal-green);
+  --color-loyal-mint: var(--loyal-mint);
+  --color-loyal-teal: var(--loyal-teal);
+  --color-loyal-cyan: var(--loyal-cyan);
+  --color-loyal-blue: var(--loyal-blue);
+  --color-loyal-indigo: var(--loyal-indigo);
+  --color-loyal-purple: var(--loyal-purple);
+  --color-loyal-pink: var(--loyal-pink);
+  --color-loyal-brown: var(--loyal-brown);
+  
+  --color-loyal-gray-1: var(--loyal-gray-1);
+  --color-loyal-gray-2: var(--loyal-gray-2);
+  --color-loyal-gray-3: var(--loyal-gray-3);
+  --color-loyal-gray-4: var(--loyal-gray-4);
+  --color-loyal-gray-5: var(--loyal-gray-5);
+  --color-loyal-gray-6: var(--loyal-gray-6);
+  
+  --color-loyal-background: var(--loyal-background);
+  --color-loyal-secondaryBackground: var(--loyal-secondaryBackground);
+  --color-loyal-tertiaryBackground: var(--loyal-tertiaryBackground);
+  --color-loyal-groupedBackground: var(--loyal-groupedBackground);
+  --color-loyal-secondaryGroupedBackground: var(--loyal-secondaryGroupedBackground);
+  --color-loyal-tertiaryGroupedBackground: var(--loyal-tertiaryGroupedBackground);
+  
+  --color-loyal-label: var(--loyal-label);
+  --color-loyal-secondaryLabel: var(--loyal-secondaryLabel);
+  --color-loyal-tertiaryLabel: var(--loyal-tertiaryLabel);
+  --color-loyal-quaternaryLabel: var(--loyal-quaternaryLabel);
+  
+  --color-loyal-fill: var(--loyal-fill);
+  --color-loyal-secondaryFill: var(--loyal-secondaryFill);
+  --color-loyal-tertiaryFill: var(--loyal-tertiaryFill);
+  --color-loyal-quaternaryFill: var(--loyal-quaternaryFill);
+  
+  --color-loyal-separator: var(--loyal-separator);
+  --color-loyal-opaqueSeparator: var(--loyal-opaqueSeparator);
+  --color-loyal-thinSeparator: var(--loyal-thinSeparator);
+  
+  --color-loyal-card: var(--loyal-card);
+  --color-loyal-popover: var(--loyal-popover);
+  --color-loyal-sheet: var(--loyal-sheet);
+  --color-loyal-toast: var(--loyal-toast);
+}
+
+@layer base {
+  * {
+    @apply border-loyal-separator outline-loyal-blue/50;
+  }
+  body {
+    @apply bg-loyal-background text-loyal-label;
+  }
+}
