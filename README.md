@@ -123,7 +123,7 @@ export default function ModalExample() {
           </>
         }
       >
-        <p>This is a modal component styled according to Apple's design guidelines.</p>
+        <p>This is a modal component styled according to Loyal's design guidelines.</p>
       </Modal>
     </>
   );
@@ -137,7 +137,7 @@ Loyal UI is designed with these core principles:
 2. **Developer experience**: Easy to use, well documented, and with a great developer experience
 3. **Performance**: Lightweight with minimal bundle size impact
 4. **Accessibility**: All components meet WCAG AA standards
-5. **Customization**: Easily adapt components to your brand while maintaining the Apple-like aesthetic
+5. **Customization**: Easily adapt components to your brand 
 
 ## 🛠️ Customization
 
