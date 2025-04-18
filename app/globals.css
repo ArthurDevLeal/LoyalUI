@@ -4,12 +4,13 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-
-  --loyal-primary: oklch(0.5404 0.161 253.82);
+  /* Core semantic colors */
+  --loyal-primary: oklch(0.62 0.16 253.82);    
   --loyal-secondary: oklch(0.748 0.199 46.39);
   --loyal-tertiary: oklch(0.568 0.277 12.16);
   --loyal-quaternary: oklch(0.7861 0.181 142.72);
 
+  /* Standard system colors */
   --loyal-red: oklch(0.5691 0.266 15.34);
   --loyal-orange: oklch(0.748 0.199 46.39);
   --loyal-yellow: oklch(0.9294 0.157 84.8);
@@ -17,92 +18,167 @@
   --loyal-mint: oklch(0.7947 0.149 183.1);
   --loyal-teal: oklch(0.698 0.139 202.36);
   --loyal-cyan: oklch(0.6684 0.129 230.14);
-  --loyal-blue: oklch(0.5404 0.161 253.82);
+  --loyal-blue: oklch(0.62 0.16 253.82);        
   --loyal-indigo: oklch(0.5164 0.218 284.67);
   --loyal-purple: oklch(0.5658 0.21 315.49);
   --loyal-pink: oklch(0.568 0.277 12.16);
   --loyal-brown: oklch(0.598 0.079 64.8);
   
-   --loyal-gray-1: oklch(0.628 0.006 258.34);
-   --loyal-gray-2: oklch(0.7302 0.005 258.34);
-   --loyal-gray-3: oklch(0.8253 0.005 258.34);
-   --loyal-gray-4: oklch(0.855 0.005 258.34);
-   --loyal-gray-5: oklch(0.9176 0.005 258.34);
-   --loyal-gray-6: oklch(0.9645 0.005 258.34);
+  /* Gray scale - refined for better matching with Apple UI */
+  --loyal-gray-1: oklch(0.55 0 0);
+  --loyal-gray-2: oklch(0.71 0 0);
+  --loyal-gray-3: oklch(0.78 0 0);
+  --loyal-gray-4: oklch(0.855 0 0);
+  --loyal-gray-5: oklch(0.9176 0 0);
+  --loyal-gray-6: oklch(0.9645 0 0);
 
+  /* Background hierarchy */
   --loyal-background: oklch(1 0 0);
-  --loyal-secondaryBackground: oklch(0.9645 0.005 258.34);
-  --loyal-tertiaryBackground: oklch(1 0 0);
-  --loyal-groupedBackground: oklch(0.9645 0.005 258.34);
+  --loyal-background-elevated: oklch(1 0 0);
+  --loyal-secondaryBackground: oklch(0.9645 0 0);
+  --loyal-secondaryBackground-elevated: oklch(0.98 0 0);
+  --loyal-tertiaryBackground: oklch(0.98 0 0);  
+  --loyal-tertiaryBackground-elevated: oklch(0.99 0 0);
+  --loyal-groupedBackground: oklch(0.9645 0 0);
   --loyal-secondaryGroupedBackground: oklch(1 0 0);
-  --loyal-tertiaryGroupedBackground: oklch(0.9645 0.005 258.34);
+  --loyal-tertiaryGroupedBackground: oklch(0.9645 0 0);
 
-    
+  /* Label hierarchy */
   --loyal-label: oklch(0 0 0);
-  --loyal-secondaryLabel: oklch(0.363 0.006 258.34 / 0.6);
-  --loyal-tertiaryLabel: oklch(0.363 0.006 258.34 / 0.3);
-  --loyal-quaternaryLabel: oklch(0.363 0.006 258.34 / 0.18);
+  --loyal-secondaryLabel: oklch(0.363 0 0 / 0.75); 
+  --loyal-tertiaryLabel: oklch(0.363 0 0 / 0.4);
+  --loyal-quaternaryLabel: oklch(0.363 0 0 / 0.2);
   
-  --loyal-fill: oklch(0.545 0.007 258.34 / 0.2);
-  --loyal-secondaryFill: oklch(0.545 0.007 258.34 / 0.16);
-  --loyal-tertiaryFill: oklch(0.545 0.007 258.34 / 0.12);
-  --loyal-quaternaryFill: oklch(0.545 0.007 258.34 / 0.08);
+  /* Fill hierarchy */
+  --loyal-fill: oklch(0.545 0 0 / 0.15);
+  --loyal-secondaryFill: oklch(0.545 0 0 / 0.1);
+  --loyal-tertiaryFill: oklch(0.545 0 0 / 0.08);
+  --loyal-quaternaryFill: oklch(0.545 0 0 / 0.05);
   
-  --loyal-separator: oklch(0.363 0.006 258.34 / 0.29);
-  --loyal-opaqueSeparator: oklch(0.803 0.004 258.34);
-  --loyal-thinSeparator: oklch(0.363 0.006 258.34 / 0.18);
-  
+  /* Separators */
+  --loyal-separator: oklch(0.363 0 0 / 0.2);
+  --loyal-opaqueSeparator: oklch(0.803 0 0);
+  --loyal-thinSeparator: oklch(0.363 0 0 / 0.1);
+
+  /* Component colors */
   --loyal-card: oklch(1 0 0);
   --loyal-popover: oklch(1 0 0);
   --loyal-sheet: oklch(1 0 0);
-  --loyal-toast: oklch(1 0 0 / 0.86);
+  --loyal-toast: oklch(1 0 0 / 0.9);
+  
+  /* iOS/macOS specific container attributes */
+  --loyal-container-background: oklch(1 0 0);
+  --loyal-container-grouped-background: oklch(0.9645 0 0);
+  
+  /* Apple HIG Border Radius */
+  --loyal-radius-xs: 2px;       /* Small UI elements */
+  --loyal-radius-sm: 4px;       /* Buttons, smaller cards */
+  --loyal-radius-md: 8px;       /* Standard cards, alerts */
+  --loyal-radius-lg: 12px;      /* Large cards, sheets */
+  --loyal-radius-xl: 16px;      /* Modals, full panels */
+  --loyal-radius-2xl: 24px;     /* Extra large features */
+  --loyal-radius-full: 9999px;  /* Pills, badges */
+  
+  /* Apple HIG consistent spacing */
+  --loyal-spacing-xs: 4px;
+  --loyal-spacing-sm: 8px;
+  --loyal-spacing-md: 16px;
+  --loyal-spacing-lg: 24px;
+  --loyal-spacing-xl: 32px;
+  --loyal-spacing-2xl: 48px;
+  
+  /* Shadows and elevations - following Apple HIG's subtle approach */
+  --loyal-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --loyal-shadow-md: 0 2px 4px rgba(0, 0, 0, 0.08);
+  --loyal-shadow-lg: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --loyal-shadow-xl: 0 8px 16px rgba(0, 0, 0, 0.12);
+  
+  /* Transitions - Apple-like subtle animations */
+  --loyal-transition-fast: 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+  --loyal-transition-normal: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  --loyal-transition-slow: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+  
+  /* Typography sizing based on Apple HIG */
+  --loyal-text-xs: 11px;
+  --loyal-text-sm: 13px;
+  --loyal-text-base: 15px;
+  --loyal-text-lg: 17px;
+  --loyal-text-xl: 19px;
+  --loyal-text-2xl: 21px;
+  --loyal-text-3xl: 24px;
+  --loyal-text-4xl: 28px;
+  
+  /* Font weights aligned with Apple's SF Pro */
+  --loyal-font-regular: 400;
+  --loyal-font-medium: 500;
+  --loyal-font-semibold: 600;
+  --loyal-font-bold: 700;
 }
+
 .dark {
-  --loyal-primary: oklch(0.593 0.156 253.82);
-  --loyal-secondary: oklch(0.786 0.189 46.39);
-  --loyal-tertiary: oklch(0.598 0.247 12.16);
-  --loyal-quaternary: oklch(0.8193 0.176 142.72);
-  
-  --loyal-red: oklch(0.599 0.236 15.34);
-  --loyal-orange: oklch(0.786 0.189 46.39);
-  --loyal-yellow: oklch(0.958 0.147 84.8);
-  --loyal-green: oklch(0.764 0.163 142.51);
-  --loyal-mint: oklch(0.829 0.136 183.1);
-  --loyal-teal: oklch(0.723 0.129 202.36);
-  --loyal-cyan: oklch(0.716 0.119 230.14);
-  --loyal-blue: oklch(0.593 0.156 253.82);
-  --loyal-indigo: oklch(0.558 0.208 284.67);
-  --loyal-purple: oklch(0.597 0.2 315.49);
-  --loyal-pink: oklch(0.598 0.247 12.16);
-  --loyal-brown: oklch(0.635 0.069 64.8);
-  
+  /* Accent colors - adjusted for dark mode visibility per HIG */
+  --loyal-primary: oklch(0.72 0.16 253.82); 
+  --loyal-red: oklch(0.65 0.24 15.34);
+  --loyal-orange: oklch(0.798 0.199 46.39);
+  --loyal-yellow: oklch(0.9694 0.157 84.8);
+  --loyal-green: oklch(0.776 0.173 142.51);
+  --loyal-mint: oklch(0.8447 0.149 183.1);
+  --loyal-teal: oklch(0.748 0.139 202.36);
+  --loyal-cyan: oklch(0.7184 0.129 230.14);
+  --loyal-blue: oklch(0.72 0.16 253.82);
+  --loyal-indigo: oklch(0.6164 0.218 284.67);
+  --loyal-purple: oklch(0.6658 0.21 315.49);
+  --loyal-pink: oklch(0.668 0.277 12.16);
+  --loyal-brown: oklch(0.698 0.079 64.8);
 
-  --loyal-background: oklch(0 0 0);
-  --loyal-secondaryBackground: oklch(0.168 0.003 258.34);
-  --loyal-tertiaryBackground: oklch(0.243 0.003 258.34);
-  --loyal-groupedBackground: oklch(0.168 0.003 258.34);
-  --loyal-secondaryGroupedBackground: oklch(0.243 0.003 258.34);
-  --loyal-tertiaryGroupedBackground: oklch(0.3 0.003 258.34);
+  /* Background hierarchy - dark mode */
+  --loyal-background: oklch(0.12 0 0);
+  --loyal-background-elevated: oklch(0.15 0 0);
+  --loyal-secondaryBackground: oklch(0.18 0 0);
+  --loyal-secondaryBackground-elevated: oklch(0.21 0 0);
+  --loyal-tertiaryBackground: oklch(0.24 0 0);
+  --loyal-tertiaryBackground-elevated: oklch(0.27 0 0);
+  --loyal-groupedBackground: oklch(0.18 0 0);
+  --loyal-secondaryGroupedBackground: oklch(0.24 0 0);
+  --loyal-tertiaryGroupedBackground: oklch(0.3 0 0);
   
-
-  --loyal-label: oklch(1 0 0);
-  --loyal-secondaryLabel: oklch(0.945 0.005 258.34 / 0.6);
-  --loyal-tertiaryLabel: oklch(0.945 0.005 258.34 / 0.3);
-  --loyal-quaternaryLabel: oklch(0.945 0.005 258.34 / 0.18);
+  /* Label hierarchy - dark mode */
+  --loyal-label: oklch(0.98 0 0);               
+  --loyal-secondaryLabel: oklch(0.82 0 0 / 0.7);
+  --loyal-tertiaryLabel: oklch(0.82 0 0 / 0.4);
+  --loyal-quaternaryLabel: oklch(0.82 0 0 / 0.2);
   
-
-  --loyal-card: oklch(0.168 0.003 258.34);
-  --loyal-popover: oklch(0.243 0.003 258.34);
-  --loyal-sheet: oklch(0.168 0.003 258.34 / 0.85);
-  --loyal-toast: oklch(0.273 0.003 258.34 / 0.86);
+  /* Fill hierarchy - dark mode */
+  --loyal-fill: oklch(0.745 0 0 / 0.15);
+  --loyal-secondaryFill: oklch(0.745 0 0 / 0.1);
+  --loyal-tertiaryFill: oklch(0.745 0 0 / 0.08);
+  --loyal-quaternaryFill: oklch(0.745 0 0 / 0.05);
+  
+  /* Component colors - dark mode */
+  --loyal-card: oklch(0.22 0 0); 
+  --loyal-popover: oklch(0.24 0 0);
+  --loyal-sheet: oklch(0.18 0 0 / 0.9);
+  --loyal-toast: oklch(0.24 0 0 / 0.95);
+  
+  /* iOS/macOS specific container attributes - dark mode */
+  --loyal-container-background: oklch(0.18 0 0);
+  --loyal-container-grouped-background: oklch(0.24 0 0);
+  
+  /* Shadows and elevations - dark mode adjustments */
+  --loyal-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2);
+  --loyal-shadow-md: 0 2px 4px rgba(0, 0, 0, 0.25);
+  --loyal-shadow-lg: 0 4px 8px rgba(0, 0, 0, 0.3);
+  --loyal-shadow-xl: 0 8px 16px rgba(0, 0, 0, 0.35);
 }
 
 @theme inline {
+  /* Core semantic colors */
   --color-loyal-primary: var(--loyal-primary);
   --color-loyal-secondary: var(--loyal-secondary);
   --color-loyal-tertiary: var(--loyal-tertiary);
   --color-loyal-quaternary: var(--loyal-quaternary);
   
+  /* Standard system colors */
   --color-loyal-red: var(--loyal-red);
   --color-loyal-orange: var(--loyal-orange);
   --color-loyal-yellow: var(--loyal-yellow);
@@ -116,6 +192,7 @@
   --color-loyal-pink: var(--loyal-pink);
   --color-loyal-brown: var(--loyal-brown);
   
+  /* Gray scale */
   --color-loyal-gray-1: var(--loyal-gray-1);
   --color-loyal-gray-2: var(--loyal-gray-2);
   --color-loyal-gray-3: var(--loyal-gray-3);
@@ -123,38 +200,118 @@
   --color-loyal-gray-5: var(--loyal-gray-5);
   --color-loyal-gray-6: var(--loyal-gray-6);
   
+  /* Background hierarchy */
   --color-loyal-background: var(--loyal-background);
+  --color-loyal-background-elevated: var(--loyal-background-elevated);
   --color-loyal-secondaryBackground: var(--loyal-secondaryBackground);
+  --color-loyal-secondaryBackground-elevated: var(--loyal-secondaryBackground-elevated);
   --color-loyal-tertiaryBackground: var(--loyal-tertiaryBackground);
+  --color-loyal-tertiaryBackground-elevated: var(--loyal-tertiaryBackground-elevated);
   --color-loyal-groupedBackground: var(--loyal-groupedBackground);
   --color-loyal-secondaryGroupedBackground: var(--loyal-secondaryGroupedBackground);
   --color-loyal-tertiaryGroupedBackground: var(--loyal-tertiaryGroupedBackground);
   
+  /* Label hierarchy */
   --color-loyal-label: var(--loyal-label);
   --color-loyal-secondaryLabel: var(--loyal-secondaryLabel);
   --color-loyal-tertiaryLabel: var(--loyal-tertiaryLabel);
   --color-loyal-quaternaryLabel: var(--loyal-quaternaryLabel);
   
+  /* Fill hierarchy */
   --color-loyal-fill: var(--loyal-fill);
   --color-loyal-secondaryFill: var(--loyal-secondaryFill);
   --color-loyal-tertiaryFill: var(--loyal-tertiaryFill);
   --color-loyal-quaternaryFill: var(--loyal-quaternaryFill);
   
+  /* Separators */
   --color-loyal-separator: var(--loyal-separator);
   --color-loyal-opaqueSeparator: var(--loyal-opaqueSeparator);
   --color-loyal-thinSeparator: var(--loyal-thinSeparator);
   
+  /* Component colors */
   --color-loyal-card: var(--loyal-card);
   --color-loyal-popover: var(--loyal-popover);
   --color-loyal-sheet: var(--loyal-sheet);
   --color-loyal-toast: var(--loyal-toast);
+  
+  /* iOS/macOS specific container attributes */
+  --color-loyal-container-background: var(--loyal-container-background);
+  --color-loyal-container-grouped-background: var(--loyal-container-grouped-background);
+  
+  /* Border radius */
+  --radius-loyal-xs: var(--loyal-radius-xs);
+  --radius-loyal-sm: var(--loyal-radius-sm);
+  --radius-loyal-md: var(--loyal-radius-md);
+  --radius-loyal-lg: var(--loyal-radius-lg);
+  --radius-loyal-xl: var(--loyal-radius-xl);
+  --radius-loyal-2xl: var(--loyal-radius-2xl);
+  --radius-loyal-full: var(--loyal-radius-full);
+  
+  /* Spacing */
+  --spacing-loyal-xs: var(--loyal-spacing-xs);
+  --spacing-loyal-sm: var(--loyal-spacing-sm);
+  --spacing-loyal-md: var(--loyal-spacing-md);
+  --spacing-loyal-lg: var(--loyal-spacing-lg);
+  --spacing-loyal-xl: var(--loyal-spacing-xl);
+  --spacing-loyal-2xl: var(--loyal-spacing-2xl);
+  
+  /* Shadows */
+  --shadow-loyal-sm: var(--loyal-shadow-sm);
+  --shadow-loyal-md: var(--loyal-shadow-md);
+  --shadow-loyal-lg: var(--loyal-shadow-lg);
+  --shadow-loyal-xl: var(--loyal-shadow-xl);
+  
+  /* Transitions */
+  --transition-loyal-fast: var(--loyal-transition-fast);
+  --transition-loyal-normal: var(--loyal-transition-normal);
+  --transition-loyal-slow: var(--loyal-transition-slow);
+  
+  /* Typography */
+  --text-loyal-xs: var(--loyal-text-xs);
+  --text-loyal-sm: var(--loyal-text-sm);
+  --text-loyal-base: var(--loyal-text-base);
+  --text-loyal-lg: var(--loyal-text-lg);
+  --text-loyal-xl: var(--loyal-text-xl);
+  --text-loyal-2xl: var(--loyal-text-2xl);
+  --text-loyal-3xl: var(--loyal-text-3xl);
+  --text-loyal-4xl: var(--loyal-text-4xl);
+  
+  /* Font weights */
+  --font-loyal-regular: var(--loyal-font-regular);
+  --font-loyal-medium: var(--loyal-font-medium);
+  --font-loyal-semibold: var(--loyal-font-semibold);
+  --font-loyal-bold: var(--loyal-font-bold);
 }
 
 @layer base {
   * {
     @apply border-loyal-separator outline-loyal-blue/50;
   }
+  
+
+  *, *::before, *::after {
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  }
+  
   body {
     @apply bg-loyal-background text-loyal-label;
+    font-family: var(--nunito-font), system-ui, -apple-system, "SF Pro Text", "SF Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+}
+
+@media (min-width: 768px) {
+  :root {
+    --loyal-spacing-md: 20px;
+    --loyal-spacing-lg: 28px;
+    --loyal-spacing-xl: 36px;
+  }
+}
+
+@layer utilities {
+  .focus-ring {
+    @apply focus:outline-none focus:ring-2 focus:ring-loyal-blue/50 focus:ring-offset-1;
   }
 }
