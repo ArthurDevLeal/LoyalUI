@@ -26,7 +26,7 @@ const Card = React.forwardRef<HTMLDivElement, CardProps>(
         className={twMerge(
           "transition-all duration-loyal-normal",
           variantStyles[variant],
-          hasBorder ? "border border-loyal-thinSeparator" : "",
+          hasBorder ? "border " : "",
           className
         )}
         {...props}
