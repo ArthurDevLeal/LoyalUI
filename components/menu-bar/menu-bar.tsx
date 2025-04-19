@@ -219,29 +219,6 @@ MenubarSeparator.displayName = MenubarPrimitive.Separator.displayName;
 
 type KeyboardKey = string;
 type KeyCombo = KeyboardKey[];
-interface MenubarShortcutProps extends React.HTMLAttributes<HTMLSpanElement> {
-  /**
-   * The keyboard shortcut to display and register
-   * If a string is provided, it will be displayed as-is and parsed into keys
-   * If an array is provided, it will be used directly as keys
-   */
-  keys?: string | KeyCombo;
-
-  /**
-   * Callback function to execute when the shortcut is triggered
-   */
-  onShortcut?: (event: KeyboardEvent) => void;
-
-  /**
-   * Options for the keyboard shortcut
-   */
-  shortcutOptions?: {
-    enabled?: boolean;
-    preventDefault?: boolean;
-    stopPropagation?: boolean;
-    exactMatch?: boolean;
-  };
-}
 
 interface MenubarShortcutProps extends React.HTMLAttributes<HTMLSpanElement> {
   /**
