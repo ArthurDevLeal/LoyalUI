@@ -47,8 +47,7 @@ const MenubarTrigger = React.forwardRef<
   <MenubarPrimitive.Trigger
     ref={ref}
     className={twMerge(
-      "flex cursor-default select-none items-center rounded-loyal-sm px-3 py-1 text-sm font-medium outline-none transition-colors duration-200",
-      "focus-visible:bg-loyal-secondaryFill focus-visible:text-loyal-blue focus-visible:ring-2 focus-visible:ring-loyal-blue/50 focus-visible:ring-offset-1",
+      "flex cursor-default select-none items-center rounded-loyal-sm px-3 py-1 text-sm font-medium outline-none transition-colors duration-200 focus-ring",
       "data-[state=open]:bg-loyal-tertiaryBackground data-[state=open]:text-loyal-blue hover:bg-loyal-fill",
       className
     )}
@@ -65,8 +64,7 @@ const MenubarSubTrigger = React.forwardRef<
   <MenubarPrimitive.SubTrigger
     ref={ref}
     className={twMerge(
-      "flex cursor-default select-none items-center rounded-loyal-sm px-2 py-1.5 text-sm outline-none transition-colors duration-200",
-      "focus-visible:bg-loyal-secondaryFill focus-visible:text-loyal-blue focus-visible:ring-2 focus-visible:ring-loyal-blue/50 focus-visible:ring-offset-1",
+      "flex cursor-default select-none items-center rounded-loyal-sm px-2 py-1.5 text-sm outline-none transition-colors duration-200 focus-ring",
       "data-[state=open]:bg-loyal-tertiaryBackground data-[state=open]:text-loyal-blue hover:bg-loyal-fill",
       inset && "pl-8",
       className
@@ -132,8 +130,7 @@ const MenubarItem = React.forwardRef<
   <MenubarPrimitive.Item
     ref={ref}
     className={twMerge(
-      "relative flex cursor-default select-none items-center rounded-loyal-sm px-2 py-1.5 text-sm outline-none transition-colors duration-200",
-      "focus-visible:bg-loyal-secondaryFill focus-visible:text-loyal-blue focus-visible:ring-2 focus-visible:ring-loyal-blue/50 focus-visible:ring-offset-1",
+      "relative flex cursor-default select-none items-center rounded-loyal-sm px-2 py-1.5 text-sm outline-none transition-colors duration-200 focus-ring",
       "hover:bg-loyal-fill",
       "data-[disabled]:pointer-events-none data-[disabled]:opacity-50",
       inset && "pl-8",
@@ -150,8 +147,7 @@ const MenubarCheckboxItem = React.forwardRef<
   <MenubarPrimitive.CheckboxItem
     ref={ref}
     className={twMerge(
-      "relative flex cursor-default select-none items-center rounded-loyal-sm py-1.5 pl-8 pr-2 text-sm outline-none transition-colors duration-200",
-      "focus-visible:bg-loyal-secondaryFill focus-visible:text-loyal-blue focus-visible:ring-2 focus-visible:ring-loyal-blue/50 focus-visible:ring-offset-1",
+      "relative flex cursor-default select-none items-center rounded-loyal-sm py-1.5 pl-8 pr-2 text-sm outline-none transition-colors duration-200 focus-ring",
       "hover:bg-loyal-fill",
       "data-[disabled]:pointer-events-none data-[disabled]:opacity-50",
       className
@@ -175,8 +171,7 @@ const MenubarRadioItem = React.forwardRef<
   <MenubarPrimitive.RadioItem
     ref={ref}
     className={twMerge(
-      "relative flex cursor-default select-none items-center rounded-loyal-sm py-1.5 pl-8 pr-2 text-sm outline-none transition-colors duration-200",
-      "focus-visible:bg-loyal-secondaryFill focus-visible:text-loyal-blue focus-visible:ring-2 focus-visible:ring-loyal-blue/50 focus-visible:ring-offset-1",
+      "relative flex cursor-default select-none items-center rounded-loyal-sm py-1.5 pl-8 pr-2 text-sm outline-none transition-colors duration-200 focus-ring",
       "hover:bg-loyal-fill",
       "data-[disabled]:pointer-events-none data-[disabled]:opacity-50",
       className
